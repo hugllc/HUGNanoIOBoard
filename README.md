@@ -67,10 +67,10 @@ SOFTWARE.
 
 Contact
 ------------------------
-
-> Hunt Utilities Group, LLC
-> 2331 Dancing Wind Rd SW
-> Pine River, MN 56474
-> (218) 587-5001
-> http://www.hugllc.com/
- 
+```
+Hunt Utilities Group, LLC
+2331 Dancing Wind Rd SW
+Pine River, MN 56474
+(218) 587-5001
+http://www.hugllc.com/
+```
