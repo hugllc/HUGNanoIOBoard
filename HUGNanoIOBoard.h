@@ -56,8 +56,4 @@ static const uint8_t OUT8 = 8;
 
 static const uint8_t SPEAKER = 11;
 
-static const uint8_t RV1 = IN7;
-static const uint8_t RV2 = IN8;
-
-
 #endif
