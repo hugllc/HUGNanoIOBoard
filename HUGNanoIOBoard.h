@@ -2,18 +2,18 @@
  * @file
  * @author     Scott L. Price <prices@hugllc.com>
  * @copyright  © 2017 Hunt Utilities Group, LLC
- * @brief   The main file for the fence cutting machine firmware.
+ * @brief      The main include file for the HUGNanoIOBoard library.
  * @details
  */
 
-#ifndef MOTOR_H
-#define MOTOR_H
+#ifndef HUGNANOIOBOARD_H_
+#define HUGNANOIOBOARD_H_
 
 #include <Arduino.h>
 #include <stdint.h>
 
 
-#ifdef HUGNETNANOIO_V1
+#ifdef HUGNANOIO_V1
 // Only a few of these were made
 static const uint8_t IN1 = A0;
 static const uint8_t IN2 = A1;
@@ -28,7 +28,7 @@ static const uint8_t SW1 = 12;
 static const uint8_t SW2 = 2;
 
 
-#else
+#else // HUGNANOIO_V1
 
 static const uint8_t IN1 = A4;
 static const uint8_t IN2 = A5;
@@ -42,7 +42,7 @@ static const uint8_t IN8 = A3;
 static const uint8_t SW1 = 2;
 static const uint8_t SW2 = 12;
 
-#endif
+#endif // HUGNANOIO_V1
 
 
 static const uint8_t OUT1 = 10;
@@ -56,4 +56,4 @@ static const uint8_t OUT8 = 8;
 
 static const uint8_t SPEAKER = 11;
 
-#endif
+#endif // HUGNANOIOBOARD_H_
