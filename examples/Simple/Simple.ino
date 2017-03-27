@@ -16,19 +16,17 @@ void setup(void)
 {
     pinMode(OUT1, OUTPUT);
     pinMode(IN1, INPUT);
-    
     Serial.begin(115200);
 }
 
 void loop(void)
 {
     unsigned long thisRun = millis();
-    if(thisRun - lastRun >= INTERVAL) {
+    if (thisRun - lastRun >= INTERVAL) {
         // This toggles output OUT1
         digitalWrite(OUT1, !digitalRead(OUT1));
-        
         // This writes the value of the ADC to the serial port
-        Serial.println("IN1:  "+analogRead(IN1));
+        Serial.println("IN1:  " + analogRead(IN1));
     }
 }
 
